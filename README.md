@@ -2,9 +2,6 @@
 
 This repository contains APIs for the Wastewise team's capstone project, these APIs connect the machine learning model to the front end
 
-###Link to API:
-"https://api-model-ec5ew3ynzq-em.a.run.app/"
-
 ### API Endpoint: "/"
 This endpoint will return a welcome json.
 
@@ -23,4 +20,4 @@ This endpoint is used to perform image detection using the POST method.
 
 **Example of Use with cURL:**
 ```bash
-curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/image.jpg" https://api-model-ec5ew3ynzq-em.a.run.app//predict
+curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/image.jpg" your-api//predict
