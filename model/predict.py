@@ -2,11 +2,14 @@ from keras.models import load_model
 from keras.preprocessing import image
 import numpy as np
 from PIL import Image
-from werkzeug.utils import secure_filename
 from flask import jsonify
 
 model_path = "model/model_WasteWise_baru80.h5"
 class_labels = ['battery', 'cardboard', 'carton', 'glass', 'metal', 'organic', 'paper', 'plastic']
+
+# Load the model and compile it (lakukan ini di luar fungsi perform_prediction, mungkin di bagian atas file)
+model = load_model(model_path)
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 def preprocess_image(img):
     # Load and preprocess the image
@@ -23,10 +26,6 @@ def perform_prediction(file):
         img = Image.open(file)
         img_array = preprocess_image(img)
 
-        # Load the model
-        model = load_model(model_path)
-        model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
-
         # Perform prediction
         prediction = model.predict(img_array, batch_size=10)
         class_index = np.argmax(prediction, axis=1)
@@ -36,4 +35,6 @@ def perform_prediction(file):
         return class_label_prediction, probability
 
     except Exception as e:
+        # Log the error for debugging
+        print("Error during prediction:", e)
         raise e
