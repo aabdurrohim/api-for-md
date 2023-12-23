@@ -8,14 +8,14 @@ This endpoint is used to perform image detection using the POST method.
 
 
 ###Example:
-
 ### Request
 
 **Header:**
-- Content-Type: application/json
+- Content-Type: multipart/form-data
 
 **Body:**
-```json
-{
-  "image": "base64_encoded_image"
-}
+- Gunakan metode POST dan sertakan file gambar dengan nama kunci 'file'.
+
+**Contoh Penggunaan dengan cURL:**
+```bash
+curl -X POST -H "Content-Type: multipart/form-data" -F "file=@path/to/your/image.jpg" http://url-api-anda/predict
