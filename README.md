@@ -2,8 +2,7 @@
 
 This repository contains APIs for the Wastewise team's capstone project, these APIs connect the machine learning model to the front end
 
-## API Endpoint: /predict
 
-### Deskripsi
+## API Endpoint: /predict
 This endpoint is used to perform image detection using the POST method.
 
