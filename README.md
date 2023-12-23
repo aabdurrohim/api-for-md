@@ -9,7 +9,7 @@ This endpoint will return a welcome json.
 This endpoint is used to perform image detection using the POST method.
 
 
-###Example:
+### Example:
 ### Request
 
 **Header:**
