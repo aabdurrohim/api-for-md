@@ -2,5 +2,5 @@ Flask
 gunicorn
 keras
 numpy
-Pillow
-tensorflow
+Pillow==8.2.0
+tensorflow==2.6.0
