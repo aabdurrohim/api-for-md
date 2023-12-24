@@ -17,3 +17,6 @@ Install the required Python packages using the following command:
 
 ```bash
 pip install flask keras Pillow
+
+
+
