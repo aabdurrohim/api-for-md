@@ -16,6 +16,3 @@ Use the /predict endpoint to make waste type predictions based on an image. Send
 | Key | Type     | Value               |
 | :-------- | :------- | :------------------------- |
 | `file` | `file` | Upload Required. Image file for prediction |
-
-
-
