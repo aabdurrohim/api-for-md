@@ -32,5 +32,11 @@ Use the /predict endpoint to make waste type predictions based on an image. Send
 | :-------- | :------- | :------------------------- |
 | `file` | `file` | Upload Image file for prediction |
 
-
+- **Example Responses:**
+  ```bash
+  {
+  "prediction": "paper",
+  "probability": 0.987
+  }
+  ```
 
