@@ -29,3 +29,13 @@ Welcome to WasteWise Prediction API! This API is designed to predict the type of
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
+
+Install dependencies:
+
+  ```bash
+  pip install -r requirements.txt
+
+# Usage
+Running the Server
+Run the Flask application to start the API server:
+
