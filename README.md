@@ -27,7 +27,7 @@ Welcome to WasteWise Prediction API! This API is designed to predict the type of
 - **Example Request:**
   **Headers:** <br>
   `Content-Type: multipart/form-data: Specifies the type of content being sent.`
-  **Body:**
+  <br> **Body:**
   `file: The key for uploading the image file. Ensure to replace `
   <br>`/path/to/captured_image.jpg with the actual path to your captured image file.`
 - Request Format:
