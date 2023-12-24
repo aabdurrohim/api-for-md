@@ -1,11 +1,11 @@
-# WasteWise 2023 API
+
+# WASTEWISE 2023
 
 Welcome to WasteWise Prediction API! This API is designed to predict the type of waste (e.g., cardboard, glass, plastic) based on an image using a pre-trained deep learning model.
 
-## API Endpoints
+## API ENDPOINTS
 
-### Home
-
+### HOME
 - **Endpoint:** `/`
 - **Method:** `GET`
 - **Description:** Get a welcome message.
@@ -19,27 +19,22 @@ Welcome to WasteWise Prediction API! This API is designed to predict the type of
   "Message": "Welcome to WasteWise"
   }
   ```
-### Predict
+
+## Making Predictions
+Use the /predict endpoint to make waste type predictions based on an image. Send a POST request with the image file to get predictions.
 
 - **Endpoint:** `/predict`
 - **Method:** `POST`
 - **Description:** Upload an image file for waste prediction.
 - **Example Request:**
-  **Headers:** <br>
-  `Content-Type: multipart/form-data: Specifies the type of content being sent.`
-  <br> **Body:**
-  `file: The key for uploading the image file. Ensure to replace `
-  <br>`/path/to/captured_image.jpg with the actual path to your captured image file.`
-- Request Format:
-  Ensure the request is made using the form-data option. Use the key file to upload the image file.
 
-  ```bash
-  curl -X POST -F "file=@path/to/image.jpg" http://127.0.0.1:5000/api/predict
-- **Example Responses:**
-  ```bash
-  {
-  "prediction": "paper",
-  "probability": 0.987
-  }
-  ```
+```http
+  POST /api/predict
+```
+
+| Key | Type     | Value               |
+| :-------- | :------- | :------------------------- |
+| `file` | `file` | Upload Image file for prediction |
+
+
 
