@@ -1,41 +1,21 @@
-# WasteWise Prediction API
+
+# WASTEWISE 2023
 
 Welcome to WasteWise Prediction API! This API is designed to predict the type of waste (e.g., cardboard, glass, plastic) based on an image using a pre-trained deep learning model.
 
-## Table of Contents
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-  - [Running the Server](#running-the-server)
-  - [Making Predictions](#making-predictions)
-- [API Endpoints](#api-endpoints)
-  - [1. Welcome Message](#1-welcome-message)
-  - [2. Image Prediction](#2-image-prediction)
-- [Sample Requests](#sample-requests)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Getting Started
+## Making Predictions
+Use the /predict endpoint to make waste type predictions based on an image. Send a POST request with the image file to get predictions.
 
-### Prerequisites
-- Python 3.x
-- Flask
-- Keras
-- PIL (Pillow)
+#### POST
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+```http
+  POST /api/predict
+```
 
-Install dependencies:
+| Key | Type     | Value               |
+| :-------- | :------- | :------------------------- |
+| `file` | `file` | Upload Required. Image file for prediction |
 
-  ```bash
-  pip install -r requirements.txt
 
-# Usage
-Running the Server
-Run the Flask application to start the API server:
 
