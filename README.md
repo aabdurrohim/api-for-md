@@ -28,10 +28,6 @@ Use the /predict endpoint to make waste type predictions based on an image. Send
 - **Description:** Upload an image file for waste prediction.
 - **Example Request:**
 
-```http
-  POST /api/predict
-```
-
 | Key | Type     | Value               |
 | :-------- | :------- | :------------------------- |
 | `file` | `file` | Upload Image file for prediction |
