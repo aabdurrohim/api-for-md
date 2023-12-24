@@ -26,6 +26,8 @@ Welcome to WasteWise Prediction API! This API is designed to predict the type of
 - **Method:** `POST`
 - **Description:** Upload an image file for waste prediction.
 - **Example Request:**
+- **Request Format**:
+  ***Ensure the request is made using the form-data option. Use the key file to upload the image file.***
 
   ```bash
   curl -X POST -F "file=@path/to/image.jpg" http://127.0.0.1:5000/api/predict
