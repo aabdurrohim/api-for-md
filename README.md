@@ -21,13 +21,13 @@ Welcome to WasteWise Prediction API! This API is designed to predict the type of
   ```
 ### Predict
 
-- **Endpoint:** <br> `/predict`
-- **Method:** <br> `POST`
+- **Endpoint:** `/predict`
+- **Method:** `POST`
 - **Description:** Upload an image file for waste prediction.
 - **Example Request:**
-- **Headers:**
+- **Headers:** <br>
   `Content-Type: multipart/form-data: Specifies the type of content being sent.`
-- **Body:** <br> `file: The key for uploading the image file. Ensure to replace ` <br>
+- **Body:** `file: The key for uploading the image file. Ensure to replace ` <br>
 - <br> `/path/to/captured_image.jpg with the actual path to your captured image file.`
 - Request Format:
   Ensure the request is made using the form-data option. Use the key file to upload the image file.
