@@ -39,4 +39,5 @@ Use the /predict endpoint to make waste type predictions based on an image. Send
   "probability": 0.987
   }
   ```
-
+### Sample response using Postman
+![WasteWise Final Presentation](https://github.com/user-attachments/assets/a0da666e-4944-485c-a19a-6ff5e1c8ca6b)
